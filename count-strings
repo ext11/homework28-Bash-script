@@ -1,0 +1,10 @@
+for file in *.java
+do
+count=0
+while read
+do
+((count++))
+done <$file
+echo "$file-> $count strings"
+done
+
